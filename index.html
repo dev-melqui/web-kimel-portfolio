@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+</head>
+<body>
+   <div id="header">
+  <div class="container">
+    <nav>
+      <img src="pictures/personallogo.jpg" class="logo">
+      <ul id="side_menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about_me">About</a></li>
+        <li><a href="#myservices">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="close_menu()"></i>
+      </ul>
+        <div class="nav-icons">
+            <div class="theme-toggle" id="theme-toggle">
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+        </div>
+        <i class="fas fa-bars" onclick="open_menu()"></i>
+      </div>
+    </nav>
+<section id ="home">
+    <div class="header-content">
+      <div class="header-text">
+        <h1 id ="typed-text"></h1>
+         <p class = "typed-subtext"></p>
+         <h1>From the Philippines</h1>
+         <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1MMnPwHFcq/" class="social-icons facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/melquisedec-chicogo-452220395?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icons linkedin"><i class="fa-brands fa-linkedin"></i></a>    
+                    <a href="https://www.instagram.com/cloud_melqui?igsh=aHJxMjAyeDk1emlt" class="social-icons instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/dev-melqui" class="social-icons github"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="pictures/personallogo.jpg" download="btn btn2" class="btn btn2">Download CV</a>
+      </div>
+
+      <div class="personal-picture">
+        <img src="pictures/Picture for Portfolio 1.jpg" alt="Personal Picture">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- About Me -->
+<section id ="about_me">
+<div class="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="pictures/Picture of Portfolio 2.jpg" alt="About Me">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Hi, I'm Melqui Chicogo, an aspiring IT professional with interest in cloud engineering, software development, and system automation. I enjoy building practical projects to improve efficiency and user experience.</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Aspiring Cloud Engineer</span><br>- Deploying and designing secure, scalable cloud systems</li>
+            <li><span>Web Development</span><br>- Web app development</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience"> 
+          <ul>
+            <li><span>2024-2025</span><br>- Still Learning the field of Cloud</li>
+            <li><span>2024-2025 </span><br>- Still Learning the field of Cloud</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2024-Present</span><br>- IT Student at Polytechnic University of the Philippines</li>
+            <li><span>2022-2024</span><br>- Gumaca National High School</li>
+            <li><span>2017</span><br>- Olongtao Ibaba Elementary School</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- Tech Stack Slider -->
+<div id="tech-stack">
+  <div class="container">
+    <h1 class="sub-title">My Tech Stack</h1>
+
+    <div class="tech-slider">
+      <div class="tech-track">
+        <img src="pictures/htmllogo.png" alt="HTML">
+        <img src="pictures/csslogo.png" alt="CSS">
+        <img src="pictures/jslogo.png" alt="JavaScript">
+        <img src="pictures/pythonlogo.png" alt="Python">
+        <img src="pictures/githublogo.png" alt="GitHub">
+        <img src="pictures/laravellogo.png" alt="Laravel">
+        <img src="pictures/phplogo.png" alt="PHP">
+        <img src="pictures/visualbasiclogo.png" alt="Visual Basic">
+        <img src="pictures/c++logo.png" alt="C++">
+        <img src="pictures/nodelogo.png" alt="Node.Js">
+
+        <!-- Duplicate for smooth loop -->
+        <img src="pictures/htmllogo.png" alt="HTML">
+        <img src="pictures/csslogo.png" alt="CSS">
+        <img src="pictures/jslogo.png" alt="JavaScript">
+        <img src="pictures/pythonlogo.png" alt="Python">
+        <img src="pictures/githublogo.png" alt="GitHub">
+        <img src="pictures/laravellogo.png" alt="Laravel">
+        <img src="pictures/phplogo.png" alt="PHP">
+        <img src="pictures/visualbasiclogo.png" alt="Visual Basic">
+        <img src="pictures/c++logo.png" alt="C++">
+        <img src="pictures/nodelogo.png" alt="Node.Js">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-------- my services -------->
+<section id ="myservices">
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title1">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p> I'm currently a student who enjoys working on coding projects and learning about computers</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Cloud Development</h2>
+                    <p> I'm currently a student who enjoys working on coding projects and learning about computers</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h2>Deploy Cloud Infrastracture</h2>
+                    <p> I'm currently a student who enjoys working on coding projects and learning about computers</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Cloud Infrastracture Management</h2>
+                    <p> I'm currently a student who enjoys working on coding projects and learning about computers</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Cloud Automation</h2>
+                    <p> I'm currently a student who enjoys working on coding projects and learning about computers</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>   
+                   <i class="fas fa-code"></i>
+                    <h2>Cloud Security</h2>
+                    <p> I'm currently a student who enjoys working on coding projects and learning about computers</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-------- my portfolio -------->
+<section id ="portfolio">
+<div id="portfolio">
+    <div class="container">
+        <h1 class ="sub-title2">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pictures/mywork1.png">
+                <div class="layer">
+                    <h3>SPEAK UP,STAND STRONG,PUP SUMBUNGAN</h3>
+                    <p>Is a safe and anonymous platform for students to share their concerns, suggestions, and feedback. Voice out your thoughts, report issues, and help create a better university experience for all. Your voice matters, and we're here to listen.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/mywork2.jpg">
+                <div class="layer">
+                    <h3>CHRONOS TASK SCHEDULER</h3>
+                    <p>A Task Scheduler System is a tool or software that plans and executes tasks automatically based on set dates, times, or conditions. It helps users organize activities, manage workloads, and ensure important processes like system updates, data backups, or reminders—happen without manual effort. This system increases productivity, reduces human error, and keeps operations running smoothly and on time.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/mywork1.png">
+                <div class="layer">
+                    <h3>PEAK UP,STAND STRONG,PUP SUMBUNGAN</h3>
+                    <p>Is a safe and anonymous platform for students to share their concerns, suggestions, and feedback. Voice out your thoughts, report issues, and help create a better university experience for all. Your voice matters, and we're here to listen.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn3">See more</a>
+
+
+    </div>
+</div>
+</section>
+<!-------- Contact -------->
+<section id="contact">
+<div id ="contact">
+  <div class ="container">
+    <div class ="row">
+      <div class ="contact-left">
+        <h1 class ="sub-title">Contact Me</h1>
+        <p><i class="fa-brands fa-telegram"></i>melquichicogo@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>09079801045</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1MMnPwHFcq/"class="social-icons facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/melquisedec-chicogo-452220395?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icons linkedin"><i class="fa-brands fa-linkedin"></i></a>    
+          <a href="https://www.instagram.com/cloud_melqui?igsh=aHJxMjAyeDk1emlt" class="social-icons instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/dev-melqui" class="social-icons github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form name ="submit-to-goggle-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Chat Window -->
+  <div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+      My Portfolio Bot
+      <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chat-footer">
+      <input type="text" id="userInput" placeholder="Ask me something..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</section>
+  <div class="chat-toggle" onclick="toggleChat()">
+  <svg viewBox="0 0 23 28 " width="40" height="40" fill="black">
+    <path d="M12 2a2 2 0 0 0-2 2v1H8a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h1v1a2 2 0 0 0 4 0v-1h1a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4h-2V4a2 2 0 0 0-2-2zm-3 8a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM8 16h8v2H8v-2z"/>
+  </svg>
+  <!-- For Copyright -->
+</div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> Kimel 2025</p>
+  </div>
+</div>
+
+    <script src="dark_lightmode.js"></script>
+    
+</body>
+</html>
